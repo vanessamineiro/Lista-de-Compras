@@ -57,10 +57,13 @@ h1 {
 }
 
 a {
-
   text-decoration: none;
   font: var(--link);
   color: var(--color-brand);
+
+  &:hover {
+    color: var(--color-brand-hover);
+  }
 }
 
 .desktop-only {
@@ -75,7 +78,7 @@ a {
   margin-top: 2.75rem;
 }
 
-input {
+input[type="text"] {
   height: 2.75rem;
   padding: 0.687rem 1.125rem;
   border-radius: .75rem;
@@ -84,6 +87,16 @@ input {
   font: var(--input);
   color: var(--content-tertiary);
   flex: 1;
+
+  &:hover {
+    border-color: var(--border-hover);
+  }
+
+  &:focus {
+    outline: none;
+    color: var(--content-primary);
+    border-color: var(--color-brand);
+  }
 }
 
 button {
@@ -94,6 +107,11 @@ button {
   color: var(--always-white);
   border-radius: .75rem;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
 }
 
 @media (width > 627px) {
