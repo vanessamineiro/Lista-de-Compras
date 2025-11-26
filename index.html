@@ -26,11 +26,34 @@
         <form method="post">
 
           <div class="add-item">
-            <input id="item" name="item" type="text" placeholder="Adicione um novo item">
+            <input id="new-item" name="new-item" type="text" placeholder="Adicione um novo item">
             <button class="add" type="submit">Adicionar item</button>
           </div>
 
         </form>
+
+        <ul>
+          <li>
+            <input type="checkbox" name="item">
+            <label for="item">Pão de forma</label>
+            <button><img src="assets/trash.svg" alt="Remover item"></button>
+          </li>
+          <li>
+            <input type="checkbox" name="item">
+            <label for="item">Café preto</label>
+            <button><img src="assets/trash.svg" alt="Remover item"></button>
+          </li>
+          <li>
+            <input type="checkbox" name="item">
+            <label for="item">Suco de laranja</label>
+            <button><img src="assets/trash.svg" alt="Remover item"></button>
+          </li>
+          <li>
+            <input type="checkbox" name="item">
+            <label for="item">Bolacha</label>
+            <button><img src="assets/trash.svg" alt="Remover item"></button>
+          </li>
+        </ul>
 
         <div id="removed" class="removed hide">
           <img src="assets/warning-circle-filled.svg" alt="" />
