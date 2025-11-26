@@ -21,16 +21,22 @@
 
   <main>
     <a href="#" class="link-button"><- Voltar</a>
-    <h1>Compras da semana</h1>
+        <h1>Compras da semana</h1>
 
-    <form method="post">
+        <form method="post">
 
-      <div class="add-item">
-        <input id="item" name="item" type="text" placeholder="Adicione um novo item">
-        <button type="submit">Adicionar item</button>
-      </div>
+          <div class="add-item">
+            <input id="item" name="item" type="text" placeholder="Adicione um novo item">
+            <button class="add" type="submit">Adicionar item</button>
+          </div>
 
-    </form>
+        </form>
+
+        <div id="removed" class="removed hide">
+          <img src="assets/warning-circle-filled.svg" alt="" />
+          <p>O item foi removido da lista</p>
+          <button class="warning"><img src="assets/delete-small.svg" alt="Close" /></button>
+        </div>
 
 
   </main>

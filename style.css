@@ -100,18 +100,42 @@ input[type="text"] {
 }
 
 button {
-  height: 2.75rem;
+  all: unset;
+  cursor: pointer;
+}
+
+.add {
   background-color: var(--color-brand);
   padding: 0.687rem 1.125rem;
   font: var(--label);
   color: var(--always-white);
   border-radius: .75rem;
   border: none;
-  cursor: pointer;
 
   &:hover {
     background-color: var(--color-brand-hover);
   }
+}
+
+.removed {
+  display: flex;
+  align-items: center;
+  padding: .75rem;
+  margin-block: 2.25rem;
+  border-radius: .75rem;
+  gap: .5rem;
+  font: var(--label);
+  color: var(--always-white);
+  background-color: var(--color-danger);
+}
+
+.warning {
+  padding: 0;
+  margin-left: auto;
+}
+
+.hide {
+  display: none;
 }
 
 @media (width > 627px) {
