@@ -1,6 +1,8 @@
 const form = document.querySelector("form")
 const list = document.querySelector("ul")
 const item = document.getElementById("new-item")
+const removed = document.getElementById("removed")
+const closeAlert = document.getElementsByClassName("warning")
 
 try {
   form.onsubmit = (event) => {
@@ -41,4 +43,18 @@ try {
   alert("Não foi possível adicionar o item")
 
 }
+
+list.addEventListener("click", (event) => {
+  if (event.target.matches("li button img")) {
+    removeItem(event.target.parentElement);
+  }
+});
+
+closeAlert.addEventListener("click", () => removed.classList.add("hide"));
+
+function removeItem(item) {
+  item.parentElement.remove();
+  removed.classList.remove("hide");
+}
+
 
