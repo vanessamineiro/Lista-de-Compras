@@ -2,7 +2,7 @@ const form = document.querySelector("form")
 const list = document.querySelector("ul")
 const item = document.getElementById("new-item")
 const removed = document.getElementById("removed")
-const closeAlert = document.getElementsByClassName("warning")
+const closeAlert = document.querySelector(".warning")
 
 try {
   form.onsubmit = (event) => {
